@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1",
+    "title": "Building Scalable Web Applications with Next.js",
+    "excerpt": "Learn how to create performant and scalable web applications using Next.js, TypeScript, and modern development practices.",
+    "content": "# Building Scalable Web Applications with Next.js\n\nNext.js has revolutionized the way we build React applications by providing a comprehensive framework that handles routing, server-side rendering, and optimization out of the box.\n\n## Key Features\n\n- **Server-Side Rendering (SSR)**: Improve SEO and initial page load times\n- **Static Site Generation (SSG)**: Pre-render pages at build time\n- **API Routes**: Build full-stack applications with built-in API support\n- **Automatic Code Splitting**: Load only what's needed for each page\n\n## Getting Started\n\n```bash\nnpx create-next-app@latest my-app --typescript --tailwind\ncd my-app\nnpm run dev\n```\n\nThis creates a new Next.js project with TypeScript and Tailwind CSS configured.\n\n## Best Practices\n\n1. Use TypeScript for better development experience\n2. Implement proper error boundaries\n3. Optimize images with next/image\n4. Use dynamic imports for code splitting\n\nNext.js continues to evolve with features like the App Router, making it an excellent choice for modern web development.",
+    "author": "Alex Chen",
+    "date": "2024-01-15",
+    "readTime": "8 min read",
+    "tags": ["Next.js", "React", "TypeScript", "Web Development"],
+    "category": "Web Development",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop",
+    "featured": true
+  },
+  {
+    "id": "2",
+    "title": "Machine Learning in Web Development",
+    "excerpt": "Exploring how AI and ML are transforming the web development landscape with practical examples and implementation strategies.",
+    "content": "# Machine Learning in Web Development\n\nThe integration of machine learning into web applications is no longer a futuristic concept—it's happening now.\n\n## Popular ML Libraries for Web\n\n- **TensorFlow.js**: Run ML models directly in the browser\n- **Brain.js**: Neural networks in JavaScript\n- **ML5.js**: Friendly machine learning for creative coding\n\n## Use Cases\n\n1. **Image Recognition**: Classify and analyze images uploaded by users\n2. **Natural Language Processing**: Sentiment analysis and text classification\n3. **Recommendation Systems**: Personalized content suggestions\n4. **Predictive Analytics**: Forecast user behavior and trends\n\n## Implementation Example\n\n```javascript\nimport * as tf from '@tensorflow/tfjs';\n\n// Load a pre-trained model\nconst model = await tf.loadLayersModel('/model.json');\n\n// Make predictions\nconst prediction = model.predict(inputData);\n```\n\nML in web development opens up endless possibilities for creating intelligent, adaptive user experiences.",
+    "author": "Sarah Johnson",
+    "date": "2024-01-10",
+    "readTime": "12 min read",
+    "tags": ["Machine Learning", "AI", "TensorFlow", "JavaScript"],
+    "category": "AI/ML",
+    "image": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&h=400&fit=crop",
+    "featured": false
+  },
+  {
+    "id": "3",
+    "title": "Modern CSS Techniques for Better UX",
+    "excerpt": "Discover advanced CSS features and techniques that can significantly improve user experience and interface design.",
+    "content": "# Modern CSS Techniques for Better UX\n\nCSS has evolved tremendously, offering powerful features that can create stunning user experiences without JavaScript.\n\n## CSS Grid and Flexbox\n\nThese layout systems provide unprecedented control over page layouts:\n\n```css\n.container {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n  gap: 2rem;\n}\n```\n\n## CSS Custom Properties\n\nVariables in CSS make theming and maintenance easier:\n\n```css\n:root {\n  --primary-color: #3b82f6;\n  --secondary-color: #8b5cf6;\n}\n\n.button {\n  background: var(--primary-color);\n}\n```\n\n## Advanced Animations\n\n- **CSS Transitions**: Smooth property changes\n- **Keyframe Animations**: Complex, multi-step animations\n- **Transform Functions**: 2D and 3D transformations\n\n## Container Queries\n\nResponsive design based on container size rather than viewport:\n\n```css\n@container (min-width: 400px) {\n  .card {\n    display: flex;\n  }\n}\n```\n\nThese modern CSS features enable developers to create more engaging and responsive user interfaces.",
+    "author": "Mike Rodriguez",
+    "date": "2024-01-05",
+    "readTime": "10 min read",
+    "tags": ["CSS", "UI/UX", "Web Design", "Frontend"],
+    "category": "UI/UX",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop",
+    "featured": false
+  },
+  {
+    "id": "4",
+    "title": "DevOps Best Practices for Modern Teams",
+    "excerpt": "Essential DevOps practices that every development team should implement for better collaboration and deployment.",
+    "content": "# DevOps Best Practices for Modern Teams\n\nDevOps bridges the gap between development and operations, enabling faster and more reliable software delivery.\n\n## Core Principles\n\n1. **Continuous Integration/Continuous Deployment (CI/CD)**\n2. **Infrastructure as Code (IaC)**\n3. **Monitoring and Logging**\n4. **Automated Testing**\n\n## Essential Tools\n\n- **Version Control**: Git, GitHub/GitLab\n- **CI/CD**: Jenkins, GitHub Actions, GitLab CI\n- **Containerization**: Docker, Kubernetes\n- **Monitoring**: Prometheus, Grafana, ELK Stack\n\n## CI/CD Pipeline Example\n\n```yaml\nname: Deploy\non:\n  push:\n    branches: [main]\njobs:\n  deploy:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v2\n      - name: Setup Node.js\n        uses: actions/setup-node@v2\n        with:\n          node-version: '18'\n      - run: npm install\n      - run: npm test\n      - run: npm run build\n      - name: Deploy\n        run: npm run deploy\n```\n\n## Benefits\n\n- Faster time to market\n- Improved collaboration\n- Higher quality releases\n- Better system reliability\n\nImplementing DevOps practices transforms how teams work together and deliver software.",
+    "author": "David Kim",
+    "date": "2023-12-28",
+    "readTime": "15 min read",
+    "tags": ["DevOps", "CI/CD", "Docker", "Automation"],
+    "category": "DevOps",
+    "image": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=800&h=400&fit=crop",
+    "featured": true
+  }
+]
